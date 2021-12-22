@@ -1,0 +1,127 @@
+/* body {
+    background: url(../img/bg/imgpsh_fullsize_anim.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+    background-position-y: top;
+}
+visibility: ;*/
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 3rem;
+}
+body {
+    font-size: 1rem;
+
+     font-family:
+        /* // Cross-platform generic font family (default user interface font) */
+        system-ui,
+        /* // Safari for macOS and iOS (San Francisco) */
+        -apple-system,
+        /* // Windows */
+        "Segoe UI",
+        /* // Android */
+        Roboto,
+        /* // Basic web fallback */
+        "Helvetica Neue", Arial,
+        /* // Linux */
+        "Noto Sans",
+        "Liberation Sans",
+        /* // Sans serif fallback */
+        sans-serif,
+        /* // Emoji fonts */
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+       
+        /* max-width: 100vh; */
+        /* -moz-user-select: none; */
+        
+        /* color: #ffff00, #F7DE45; */
+}
+ 
+
+/* #for  the variety of colors in this website -- that bootstrap doesn't have */
+
+
+
+/* for search bar & inputs */
+ .general-text-input {
+     border: 0;
+     background-color: #EDF0F5;
+ }
+ .search-bar:focus {
+     outline: none;
+ }
+ /* for news letter input */
+ .news-l-input:focus {
+     outline: 1px solid #cccfd4;
+    }
+
+/* Properly see Elements outline/positioning  */
+/*    
+.border-it {
+         border: 2px solid red;
+} */
+ .dark-w-hov:hover {
+     color: #000 !important;
+     background: #EDF0F5;
+ }
+ .search-icon {
+     color: #CCCCCC;
+ }
+ 
+
+
+
+.msearch-form {
+    background-color: #EDF0F5;
+}
+
+/* xtra margins */
+.more-mb-5 {
+    margin-bottom: 5rem;
+}
+.more-mb-2 {
+    margin-bottom: 2rem;
+}
+
+/* Transition issue*/
+@media (min-width: 768px) {
+    
+    .msearch-form {
+        background-color: transparent;
+    }
+
+    .msearch-form input{
+        padding: 0;
+        max-width: 0;
+
+        transition: max-width 300ms;
+    }
+    .msearch-form input:focus{
+        padding: 0;
+    }
+
+    /* takes effect  */
+    .msearch-form input:target{
+        max-width: 12rem;
+    }
+    .msearch-form input:not(:focus){
+        max-width: 0;
+    }
+    .msearch-form:focus-within input{
+        max-width: 12rem;
+    }
+       
+
+}
+
+
+/* Google-search -
+
+diff btw focus, target, hover
+all the things a pseudo element can be?
+one transition class for everything in a page?
+diff btw transition and animation
+open state pinch zoom issue ? */
